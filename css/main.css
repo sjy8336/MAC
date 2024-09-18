@@ -1,0 +1,110 @@
+header {width: 100%; height: 80px; margin: 0 auto; transition: all .4s;}
+header:hover {background-color: #fff;}
+header .headerin {max-width: 1600px; height: 80px; display: flex; margin: 0 auto; align-items: center; position: relative;}
+header .headerin h1 {width: 168px; height: 22px;}
+header .headerin h1 a {
+    font-size: 0;
+    display: block;
+    width: 100%; height: 100%;
+    background: url(../img/mac_logo_w.png) no-repeat center center;
+    transition: all .4s;
+}
+header:hover .headerin h1 a {background-image: url(../img/mac_logo_b.png);}
+header .headerin .gnb {display: flex;}
+header .headerin .gnb>li {margin-left: 40px;}
+header .headerin .gnb>li:first-child {margin-left: 50px;}
+header .headerin .gnb>li>a {color: #f1f1f1; font-weight: 500; transition: all .4s; letter-spacing: -0.02em;}
+header:hover .headerin .gnb>li>a {color: #888; letter-spacing: -0.02em;}
+header .headerin .gnb>li>a:hover {color: #000;}
+header .headerin .gnb>li .sub {
+    width: 100%; height: 337px;
+    position: absolute; top: 80px; left: 0; 
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+header .headerin .gnb .product .sub {display: none;}
+header .headerin .gnb .product .sub .subin {
+    width: 1218px; margin: 0 auto; 
+    display: flex; justify-content: space-between;;
+    position: relative;
+}
+header .headerin .gnb .product .sub .subin .prod_menu {display: flex;}
+header .headerin .gnb .product .sub .subin .prod_menu ul {margin-left: 67px;}
+header .headerin .gnb .product .sub .subin .prod_menu ul:first-child {margin-left: 0;}
+header .headerin .gnb .product .sub .subin .prod_menu ul li {line-height: 230%;}
+header .headerin .gnb .product .sub .subin .prod_menu ul li:first-child {margin: 30px 0 14px 0; line-height: 0;}
+header .headerin .gnb .product .sub .subin .prod_menu ul li a {color: #555; font-size: 15px; letter-spacing: -0.01em;}
+header .headerin .gnb .product .sub .subin .prod_menu ul li:first-child a {font-size: 1rem; color: #000;}
+header .headerin .gnb .product .sub .subin .setin_lip {margin: 30px 0 0 91px;}
+header .headerin .gnb .product .sub .subin .setin_lip::after {
+    content: '';
+    display: block;
+    width: 1px; height: 267px;
+    background-color: #eee;
+    position: absolute;
+    top: 30px; right: 461px;
+}
+header .headerin .gnb .product .sub .subin .setin_lip div {width: 400px; height: 200px; background-color: aquamarine; overflow: hidden;}
+header .headerin .gnb .product .sub .subin .setin_lip div img {width: 100%; height: auto;}
+header .headerin .gnb .product .sub .subin .setin_lip h2 {letter-spacing: -0.02em; margin: 15px 0 10px 0;}
+header .headerin .gnb .product .sub .subin .setin_lip p {font-size: 0.88rem; color: #555;}
+header .headerin .gnb .makeup_serv .sub {display: none;}
+header .headerin .gnb .makeup_serv .sub .subin {
+    width: 1220px; margin: 0 auto; 
+    display: flex; justify-content: space-between;;
+    position: relative;
+}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu {display: flex;}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu ul {margin-left: 50px;}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu ul:first-child {margin-left: 0;}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu ul li {line-height: 230%;}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu ul li:first-child {margin: 30px 0 14px 0; line-height: 0;}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu ul li a {color: #555; font-size: 15px; letter-spacing: -0.01em;}
+header .headerin .gnb .makeup_serv .sub .subin .make_menu ul li:first-child a {font-size: 1rem; color: #000;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img {display: flex; margin-top: 30px;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img::after {
+    content: '';
+    display: block;
+    width: 1px; height: 267px;
+    background-color: #eee;
+    position: absolute;
+    top: 30px; right: 879px;
+}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual {margin-right: 19px;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual div {width: 400px; height: 200px; overflow: hidden; background-color: aqua;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual div img {width: 100%; height: auto;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual h2 {margin: 15px 0 10px 0; letter-spacing: -0.02em;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual p {font-size: 0.88rem; color: #555;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup div {width: 400px; height: 200px; overflow: hidden; background-color: aqua;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup div img {width: 100%; height: auto;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup h2 {margin: 15px 0 10px 0; letter-spacing: -0.02em;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup p {font-size: 0.88rem; color: #555;}
+header .headerin .gnb .brand .sub {display: none;}
+header .headerin .gnb .brand .sub .subin {width: 1245px; margin: 30px auto 0 auto; display: flex; justify-content: space-between;}
+header .headerin .gnb .brand .sub .subin a div {width: 300px; height: 200px; overflow: hidden; background-color: aqua;}
+header .headerin .gnb .brand .sub .subin a div img {width: 100%; height: auto;}
+header .headerin .gnb .brand .sub .subin a p {text-align: center; margin-top: 15px;}
+header .headerin .util {
+    display: flex;
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 0;
+}
+header .headerin .util li {margin-left: 25px;}
+header .headerin .util li a {
+    font-size: 0;
+    display: block;
+    width: 25px; height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../img/icon_search_w.png);
+    transition: all .4s;
+}
+header:hover .headerin .util li a {background-image: url(../img/icon_search_b.png);}
+header .headerin .util li:nth-child(2) a {background-image: url(../img/icon_mypage_w.png);}
+header:hover .headerin .util li:nth-child(2) a {background-image: url(../img/icon_mypage_b.png);}
+header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shopping_w.png);}
+header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shopping_b.png);}
+#mainVisual {width: 100%; margin: 0 auto; position: absolute; top: 0; left: 0; z-index: -1;}
+#mainVisual .bg {width: 100%;}
+#mainVisual .bg img {width: 100%;}
