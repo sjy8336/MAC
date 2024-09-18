@@ -6,6 +6,10 @@
     <title>MAC</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js" defer></script>
 </head>
 <body>
@@ -138,79 +142,91 @@
             </div>
         </header>
         <div id="mainVisual">
-            <div class="mv_in">
-                <div class="mv_prod">
-                    <div class="mv_face">
+            <div class="swiper mv_in">
+                <div class="swiper-wrapper mv_prod">
+                    <div class="swiper-slide mv_face">
                         <div class="bg"><img src="./img/main_mv02.png" alt="스튜디오 픽스 롱웨어 쿠션"></div>
-                        <h2>스튜디오 픽스 롱웨어 쿠션</h2>
-                        <p>24시간 지속되는 #더블픽스테크놀로지</p>
-                        <a href="#">view more</a>
+                        <div class="txt">
+                            <h2>스튜디오 픽스 롱웨어 쿠션</h2>
+                            <p>24시간 지속되는 #더블픽스테크놀로지</p>
+                            <a href="#">view more</a>
+                        </div>
                     </div>
-                    <div class="mv_lip">
+                    <div class="swiper-slide mv_lip">
                         <div class="bg"><img src="./img/main_mv02.png" alt="스튜디오 픽스 롱웨어 쿠션"></div>
-                        <h2>스튜디오 픽스 롱웨어 쿠션</h2>
-                        <p>24시간 지속되는 #더블픽스테크놀로지</p>
-                        <a href="#">view more</a>
+                        <div class="txt">
+                            <h2>스튜디오 픽스 롱웨어 쿠션</h2>
+                            <p>24시간 지속되는 #더블픽스테크놀로지</p>
+                            <a href="#">view more</a>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
         <div id="container">
             <div class="best">
                 <h2>BEST SELLERS</h2>
-                <div class="best_prod">
-                    <div class="bst_list">
-                        <div><a href="#">
+                <div class="swiper best_s">
+                    <div class="swiper-wrapper bst_list">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img01.png" alt="스튜디오 래디언스 세럼-파워 파운데이션">
                             <p class="name">스튜디오 래디언스 세럼-파워 파운데이션</p>
                             <p class="price">79,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img02.png" alt="글로우 플레이 텐더토크 립 밤">
                             <p class="name">글로우 플레이 텐더토크 립 밤</p>
                             <p class="price">38,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img03.png" alt="맥시멀 실키 매트 립스틱">
                             <p class="name">맥시멀 실키 매트 립스틱</p>
                             <p class="price">39,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img04.png" alt="아이섀도우 테테-아-틴트">
                             <p class="name">아이섀도우 테테-아-틴트</p>
                             <p class="price">36,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img05.png" alt="리퀴드라스트 24-아워 워터프루프 라이너">
                             <p class="name">리퀴드라스트 24-아워 워터프루프 라이너</p>
                             <p class="price">45,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img06.png" alt="엑스트라 디멘션 스킨피니쉬">
                             <p class="name">엑스트라 디멘션 스킨피니쉬</p>
                             <p class="price">73,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img07.png" alt="미네랄라이즈 블러쉬">
                             <p class="name">미네랄라이즈 블러쉬</p>
                             <p class="price">47,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img08.png" alt="스튜디오 픽스 프로+블러 파우더">
                             <p class="name">스튜디오 픽스 프로+블러 파우더</p>
                             <p class="price">58,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img09.png" alt="아이 브로우 빅 부스트 파이버 젤">
                             <p class="name">아이 브로우 빅 부스트 파이버 젤</p>
                             <p class="price">40,000원</p>
                         </a></div>
-                        <div><a href="#">
+                        <div class="swiper-slide"><a href="#">
                             <img src="./img/best_img10.png" alt="파우더 키스 리퀴드 립컬러">
                             <p class="name">파우더 키스 리퀴드 립컬러</p>
                             <p class="price">49,000원</p>
                         </a></div>
                     </div>
+                    <!-- swiper page -->
+                    <div class="swiper-pagination"></div>
+                    <!-- swiper button -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- swiper scrollbar -->
+                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
             <div class="new">

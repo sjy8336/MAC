@@ -1,6 +1,6 @@
-header {width: 100%; height: 80px; margin: 0 auto; transition: all .4s;}
+header {width: 100%; height: 80px; margin: 0 auto; transition: all .4s; z-index: 10;}
 header:hover {background-color: #fff;}
-header .headerin {max-width: 1600px; height: 80px; display: flex; margin: 0 auto; align-items: center; position: relative;}
+header .headerin {max-width: 1600px; height: 80px; display: flex; margin: 0 auto; align-items: center; position: relative; z-index: 10;}
 header .headerin h1 {width: 168px; height: 22px;}
 header .headerin h1 a {
     font-size: 0;
@@ -21,6 +21,7 @@ header .headerin .gnb>li .sub {
     position: absolute; top: 80px; left: 0; 
     background-color: #fff;
     border-top: 1px solid #eee;
+    z-index: 10;
 }
 header .headerin .gnb .product .sub {display: none;}
 header .headerin .gnb .product .sub .subin {
@@ -105,6 +106,56 @@ header .headerin .util li:nth-child(2) a {background-image: url(../img/icon_mypa
 header:hover .headerin .util li:nth-child(2) a {background-image: url(../img/icon_mypage_b.png);}
 header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shopping_w.png);}
 header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shopping_b.png);}
-#mainVisual {width: 100%; margin: 0 auto; position: absolute; top: 0; left: 0; z-index: -1;}
-#mainVisual .bg {width: 100%;}
-#mainVisual .bg img {width: 100%;}
+#mainVisual {width: 100%; height: 960px; margin: 0 auto;}
+#mainVisual .mv_in {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;}
+#mainVisual .mv_in .mv_prod {position: relative;}
+#mainVisual .mv_in .mv_prod>div .bg img {width: 100%; height: auto;}
+#mainVisual .mv_in .mv_prod>div .txt {
+    width: 50%;
+    position: absolute;
+    left: 0; top: 670px;
+    padding: 0 0 0 120px;
+}
+#mainVisual .mv_in .mv_prod .mv_face .txt h2 {
+    text-align: center;
+    font-size: 2.50rem; color: #aaa;
+    font-weight: 800; letter-spacing: -0.02em;
+}
+#mainVisual .mv_in .mv_prod .mv_face .txt p {
+    font-size: 1.13rem; color: #aaa;
+    text-align: center; margin-top: 25px;
+}
+#mainVisual .mv_in .mv_prod .mv_face .txt a {
+    display: block;
+    width: 110px; height: 35px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    color: #aaa;
+    line-height: 35px; text-align: center;
+    margin-top: 25px;
+    position: absolute; left: 50%;
+}
+#mainVisual .mv_in .mv_prod .mv_face .txt a:hover {color: #fff;}
+#mainVisual .mv_in .mv_prod .mv_face .txt a::after {
+    content: '';
+    display: block;
+    background-color: #aaa;
+    width: 0; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .6s;
+}
+#mainVisual .mv_in .mv_prod .mv_face .txt a:hover::after {width: 100%;}
+#mainVisual .mv_in .swiper-scrollbar {
+    position: absolute;
+    bottom: 83px; left: 50%;
+    transform: translateX(-50%);
+    width: 1300px; height: 2px;
+    background-color: #f8f8f8;
+}
+#mainVisual .mv_in .swiper-scrollbar-drag {background-color: #555;}
+#container {}
+#container .best {max-width: 1600px; margin: 180px;}
+#container .best h2 {}
+#container .best .best_prod {}
+#container .best .best_prod .bst_list {}
