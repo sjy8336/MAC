@@ -147,7 +147,6 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt a:hover::after {width: 100%;}
 #mainVisual .mv_in .swiper-scrollbar {
-    position: absolute;
     bottom: 83px; left: 50%;
     transform: translateX(-50%);
     width: 1300px; height: 2px;
@@ -155,7 +154,73 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 }
 #mainVisual .mv_in .swiper-scrollbar-drag {background-color: #555;}
 #container {}
-#container .best {max-width: 1600px; margin: 180px;}
-#container .best h2 {}
-#container .best .best_prod {}
-#container .best .best_prod .bst_list {}
+#container .best {max-width: 1600px; margin: 180px; position: relative;}
+#container .best h2 {text-align: center; font-size: 2.38rem; font-weight: 800; margin-bottom: 55px;}
+#container .best .best_s {/* overflow: visible; */}
+#container .best .best_s .bst_list > div > a > div {width: 270px; height: 270px; background-color: #efefef;}
+#container .best .best_s .bst_list > div > a > div img {width: 100%; height: auto;}
+#container .best .best_s .bst_list > div > a .name {margin: 15px 0; text-align: center; font-weight: 500; letter-spacing: -0.02em;}
+#container .best .best_s .bst_list > div > a .price {text-align: center; font-size: 0.88rem;}
+#container .best .swiper-button-prev {
+    cursor: pointer;
+    transform: scale(.5); color: #aaa; 
+    top: 0px; left: 1472px;
+}
+#container .best .swiper-button-next {
+    cursor: pointer;
+    transform: scale(.5); color: #aaa; 
+    top: 0px; right: 0px;
+}
+#container .best .swiper-scrollbar {
+    bottom: -42px; background-color: #d9d9d9;
+    width: 1540px; height: 2px;
+}
+#container .best .swiper-scrollbar-drag {background-color: #000;}
+#container .new {
+    width: 100%; height: 1020px;
+    background-color: #010101;
+}
+#container .new .new_in {max-width: 1600px; height: 100%; margin: 0 auto; position: relative;}
+#container .new .new_in .swiper-button-prev {cursor: pointer; color: #aaa; transform: scale(.7);}
+#container .new .new_in .swiper-button-next {cursor: pointer; color: #aaa; transform: scale(.7);}
+#container .new .new_in .new_s {width: 100%; height: 100%; /* overflow: visible; */}
+#container .new .new_in .new_s .new_list {}
+#container .new .new_in .new_s .new_list li {}
+#container .new .new_in .new_s .new_list li:nth-child(1) .new_bg {
+    width: 653px; height: 653px;
+    position: absolute;
+    top: -49px; right: 38px;
+}
+#container .new .new_in .new_s .new_list li:nth-child(2) .new_bg {
+    width: 550px; height: 550px;
+    position: absolute;
+    top: -45px; right: 80px;
+}
+#container .new .new_in .new_s .new_list li .new_bg img {width: 100%; height: auto;}
+#container .new .new_in .new_s .new_list li .text {
+    position: absolute;
+    top: 240px; left: 220px;
+}
+#container .new .new_in .new_s .new_list li .text h2 {color: #f1f1f1; font-size: 1.50rem; font-weight: 400;}
+#container .new .new_in .new_s .new_list li .text h3 {color: #f1f1f1; font-size: 2.38rem; font-weight: 600; margin: 20px 0 50px 0;}
+#container .new .new_in .new_s .new_list li .text p {color: #f1f1f1; line-height: 150%; margin-bottom: 30px; letter-spacing: -0.01em; font-weight: 200;}
+#container .new .new_in .new_s .new_list li .text a {
+    display: block;
+    width: 91px; height: 30px;
+    border: 1px solid #f1f1f1;
+    margin-top: 40px; font-size: 0.88rem;
+    text-align: center; line-height: 30px;
+    color: #f1f1f1; font-weight: 200;
+}
+#container .new .new_in .new_s .new_list li .pr_img {
+    width: 340px; height: 340px;
+    position: absolute;
+    top: 550px; left: 446px;
+}
+#container .new .new_in .new_s .new_list li div {
+    width: 550px; height: 700px; overflow: hidden;
+    position: absolute;
+    top: 190px; right: 255px;
+    z-index: 10;
+}
+#container .new .new_in .new_s .new_list li div .model {width: 100%; height: auto;}
