@@ -1,4 +1,4 @@
-header {width: 100%; height: 80px; margin: 0 auto; transition: all .4s; z-index: 10;}
+header {width: 100%; height: 80px; margin: 0 auto; transition: all .4s; position: relative; z-index: 10;}
 header:hover {background-color: #fff;}
 header .headerin {max-width: 1600px; height: 80px; display: flex; margin: 0 auto; align-items: center; position: relative; z-index: 10;}
 header .headerin h1 {width: 168px; height: 22px;}
@@ -113,29 +113,30 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #mainVisual .mv_in .mv_prod>div .txt {
     width: 50%;
     position: absolute;
-    left: 0; top: 670px;
-    padding: 0 0 0 120px;
+    left: 0; top: 621px;
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt h2 {
     text-align: center;
     font-size: 2.50rem; color: #aaa;
     font-weight: 800; letter-spacing: -0.02em;
+    margin-left: 90px;
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt p {
     font-size: 1.13rem; color: #aaa;
     text-align: center; margin-top: 25px;
+    margin-left: 90px;
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt a {
     display: block;
     width: 110px; height: 35px;
     border: 1px solid #aaa;
-    box-sizing: border-box;
     color: #aaa;
     line-height: 35px; text-align: center;
-    margin-top: 25px;
-    position: absolute; left: 50%;
+    position: relative; left: 45px;
+    margin: 30px auto 0 auto;
+    z-index: 20;
 }
-#mainVisual .mv_in .mv_prod .mv_face .txt a:hover {color: #fff;}
+#mainVisual .mv_in .mv_prod .mv_face .txt a:hover {color: #000; font-weight: 500;}
 #mainVisual .mv_in .mv_prod .mv_face .txt a::after {
     content: '';
     display: block;
@@ -144,19 +145,18 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     position: absolute;
     top: 0; left: 0;
     transition: all .6s;
+    z-index: -1;
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt a:hover::after {width: 100%;}
 #mainVisual .mv_in .swiper-scrollbar {
     bottom: 83px; left: 50%;
     transform: translateX(-50%);
     width: 1300px; height: 2px;
-    background-color: #f8f8f8;
+    background-color: #aaa;
 }
 #mainVisual .mv_in .swiper-scrollbar-drag {background-color: #555;}
-#container {}
-#container .best {max-width: 1600px; margin: 180px; position: relative;}
+#container .best {max-width: 1600px; margin: 100px auto 210px auto; position: relative;}
 #container .best h2 {text-align: center; font-size: 2.38rem; font-weight: 800; margin-bottom: 55px;}
-#container .best .best_s {/* overflow: visible; */}
 #container .best .best_s .bst_list > div > a > div {width: 270px; height: 270px; background-color: #efefef;}
 #container .best .best_s .bst_list > div > a > div img {width: 100%; height: auto;}
 #container .best .best_s .bst_list > div > a .name {margin: 15px 0; text-align: center; font-weight: 500; letter-spacing: -0.02em;}
@@ -164,7 +164,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #container .best .swiper-button-prev {
     cursor: pointer;
     transform: scale(.5); color: #aaa; 
-    top: 0px; left: 1472px;
+    top: 0px; left: 1502px;
 }
 #container .best .swiper-button-next {
     cursor: pointer;
@@ -184,8 +184,6 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #container .new .new_in .swiper-button-prev {cursor: pointer; color: #aaa; transform: scale(.7);}
 #container .new .new_in .swiper-button-next {cursor: pointer; color: #aaa; transform: scale(.7);}
 #container .new .new_in .new_s {width: 100%; height: 100%; /* overflow: visible; */}
-#container .new .new_in .new_s .new_list {}
-#container .new .new_in .new_s .new_list li {}
 #container .new .new_in .new_s .new_list li:nth-child(1) .new_bg {
     width: 653px; height: 653px;
     position: absolute;
@@ -211,7 +209,20 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     margin-top: 40px; font-size: 0.88rem;
     text-align: center; line-height: 30px;
     color: #f1f1f1; font-weight: 200;
+    position: relative;
+    transition: all .4s;
 }
+#container .new .new_in .new_s .new_list li .text a:hover {color: #000; font-weight: 500;}
+#container .new .new_in .new_s .new_list li .text a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    background-color: #f1f1f1;
+    position: absolute; left: 0; top: 0;
+    transition: all .4s;
+    z-index: -1;
+}
+#container .new .new_in .new_s .new_list li .text a:hover::after {width: 100%;}
 #container .new .new_in .new_s .new_list li .pr_img {
     width: 340px; height: 340px;
     position: absolute;
@@ -224,3 +235,248 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     z-index: 10;
 }
 #container .new .new_in .new_s .new_list li div .model {width: 100%; height: auto;}
+#container .try {max-width: 1600px; margin: 180px auto 180px auto; position: relative;}
+#container .try .try_img {width: 1240px; margin: 0 auto; display: flex; justify-content: space-between;}
+#container .try .try_img div {width: 400px; height: 400px;}
+#container .try .try_img div:nth-child(2) {margin-top: 128px;}
+#container .try .try_img div img {width: 100%; height: auto;}
+#container .try h2 {text-align: center; font-size: 2.38rem; font-weight: 800; margin: 60px 0 30px 0;}
+#container .try p {text-align: center; line-height: 140%;}
+#container .try a {
+    display: block;
+    width: 106px; height: 35px;
+    border: 1px solid #000;
+    text-align: center; line-height: 35px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    transition: all .4s;
+}
+#container .try a:hover {color: #f1f1f1; font-weight: 300;}
+#container .try a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    background-color: #000;
+    z-index: -1;
+    position: absolute;
+    left: 0; top: 0;
+    transition: all .4s;
+}
+#container .try a:hover::after {width: 100%;}
+#container .prom {width: 100%; height: 630px; background-color: #010101; margin: 0 0 180px 0; overflow: hidden;}
+#container .prom .prom_in {max-width: 1600px; height: 100%; margin: 0 auto; position: relative; padding-bottom: 130px;}
+#container .prom .prom_in h2 {font-size: 2.38rem; font-weight: 700; color: #f1f1f1; padding-top: 100px;}
+#container .prom .prom_in .promotion {display: flex; justify-content: space-between;}
+#container .prom .prom_in .promotion .prom_txt .text h3 {
+    color: #f1f1f1; font-size: 1.25rem; 
+    letter-spacing: -0.02em; font-weight: 600; 
+    margin-top: 50px;
+}
+#container .prom .prom_in .promotion .prom_txt .text p {
+    color: #ddd; font-weight: 300; 
+    line-height: 150%; letter-spacing: -0.01em;
+    margin-top: 30px;
+}
+#container .prom .prom_in .promotion .prom_txt .text a {
+    display: block;
+    width: 106px; height: 35px;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1; text-align: center;
+    line-height: 35px; letter-spacing: -0.01em;
+    transition: all .4s;
+    position: relative;
+    margin-top: 50px;
+    z-index: 3;
+}
+#container .prom .prom_in .promotion .prom_txt .text a:hover {color: #000; font-weight: 400;}
+#container .prom .prom_in .promotion .prom_txt .text a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+#container .prom .prom_in .promotion .prom_txt .text a:hover::after {width: 100%;}
+#container .prom .prom_in .promotion .prom_txt .lover_txt {display: none; position: absolute; left: 0; top: 37px;}
+#container .prom .prom_in .promotion .prom_slider {width: 50%;}
+#container .prom .prom_in .promotion .prom_slider .prom_s {}
+#container .prom .prom_in .promotion .prom_slider .prom_s .prom_img {}
+#container .prom .prom_in .promotion .prom_slider .prom_s .prom_img > div .img_box {width: 740px; height: 370px; overflow: hidden; margin: 0 auto;}
+#container .prom .prom_in .promotion .prom_slider .prom_s .prom_img > div .img_box img {width: 100%; height: auto;}
+#container .prom .prom_in .promotion .prom_slider .swiper-button-prev {color: #aaa; transform: scale(.5); top: 50%; margin-top: -45px; left: 10px;}
+#container .prom .prom_in .promotion .prom_slider .swiper-button-next {color: #aaa; transform: scale(.5); top: 50%; margin-top: -45px; right: 10px;}
+/* ********************************************다시하기********************************************* */
+#container .prod {max-width: 1600px; margin: 0 auto;}
+#container .prod h2 {text-align: center; font-size: 2.38rem; font-weight: 800;}
+#container .prod .prod_tab {display: flex; justify-content: center; margin: 30px 0 60px 0;}
+#container .prod .prod_tab li {margin-left: 30px;}
+#container .prod .prod_tab li:first-child {margin-left: 0;}
+#container .prod .prod_tab li a { color: #666; font-weight: 600;}
+#container .prod .prod_tab li:first-child a {color: #000;}
+#container .prod .prod_tab li:hover a {color: #000;}
+#container .prod .prod_up {display: flex; justify-content: space-between; margin-bottom: 50px;}
+#container .prod .prod_up > div .img_box {width: 296px; height: 296px; background-color: #efefef;}
+#container .prod .prod_up > div .img_box img {width: 100%; height: auto;}
+#container .prod .prod_up > div .name {text-align: center; margin: 15px 0; letter-spacing: -0.02em;}
+#container .prod .prod_up > div .price {text-align: center; font-size: 0.88rem;}
+#container .prod .prod_down {display: flex; justify-content: space-between; margin-bottom: 50px;}
+#container .prod .prod_down > div .img_box {width: 296px; height: 296px; background-color: #efefef;}
+#container .prod .prod_down > div .img_box img {width: 100%; height: auto;}
+#container .prod .prod_down > div .name {text-align: center; margin: 15px 0; letter-spacing: -0.02em;}
+#container .prod .prod_down > div .price {text-align: center; font-size: 0.88rem;}
+#container .prod > a {
+    display: block;
+    width: 106px; height: 35px;
+    border: 1px solid #000;
+    text-align: center; line-height: 35px;
+    letter-spacing: -0.02em;
+    margin: 0 auto;
+    position: relative;
+    transition: all .4s;
+}
+#container .prod > a:hover {color: #f1f1f1; font-weight: 400;}
+#container .prod > a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+#container .prod > a:hover::after {width: 100%;}
+#container .trend {margin: 180px 0; display: flex }
+#container .trend .tren_img {width: 40%;}
+#container .trend .tren_bg {width: 60%; height: 900px; background-color: #010101; position: relative; z-index: -3;}
+#container .trend .tren_bg .bg_txt p:nth-child(1) {
+    color: #2d2d2d; font-size: 4.38rem;
+    font-weight: 800; letter-spacing: 0.3em;
+    position: absolute;
+    top: 50%; left: -270px; 
+    transform: rotate(90deg) translateY(-50%);
+    z-index: -1;
+}
+#container .trend .tren_bg .bg_txt p:nth-child(2) {
+    font-size: 4.38rem;
+    -webkit-text-stroke: 2px rgba(119, 140, 186, .38);
+    font-weight: 800; letter-spacing: 0.3em;
+    position: absolute;
+    top: 50%; right: -200px; 
+    transform: rotate(90deg) translateY(-50%);
+    z-index: -1;
+}
+#container .trend .tren_bg h2 {color: #f1f1f1; font-size: 2.38rem; font-weight: 700; text-align: center; padding-top: 192px;}
+#container .trend .tren_bg > p {color: #f1f1f1; text-align: center; letter-spacing: -0.01em; margin: 20px 0 60px 0;}
+#container .trend .tren_bg .tren_prod {display: flex; justify-content: center;}
+#container .trend .tren_bg .tren_prod li {margin-left: 16px;}
+#container .trend .tren_bg .tren_prod li:first-child {margin-left: 0;}
+#container .trend .tren_bg .tren_prod li a .img_box {width: 260px; height: 260px; background-color: #efefef;}
+#container .trend .tren_bg .tren_prod li a .img_box img {width: 100%; height: auto;}
+#container .trend .tren_bg .tren_prod li a .name {color: #f1f1f1; text-align: center; letter-spacing: -0.01em; font-weight: 300; margin: 15px 0;}
+#container .trend .tren_bg .tren_prod li a .price {color: #f1f1f1; text-align: center; font-size: 0.88rem; font-weight: 200;}
+#container .trend .tren_bg > a {
+    display: block;
+    width: 106px; height: 35px;
+    border: 1px solid #f1f1f1;
+    text-align: center; line-height: 35px;
+    color: #f1f1f1;
+    margin: 0 auto;
+    font-weight: 300;
+    margin-top: 50px; letter-spacing: -0.01em;
+    position: relative;
+    transition: all .4s;
+    z-index: 10;
+}
+#container .trend .tren_bg > a:hover {color: #000; font-weight: 500;}
+#container .trend .tren_bg > a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .4s;
+    z-index: -1;
+}
+#container .trend .tren_bg > a:hover::after {width: 100%;}
+#container .offline {display: flex;}
+#container .offline .left {width: 50%;}
+#container .offline .left .left_bg {
+    width: 100%; height: 500px;
+    background: url(../img/offline_bg01.png)no-repeat center center;
+    position: relative;
+}
+#container .offline .left .left_bg::after {
+    content: '';
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#container .offline > div .text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 50;}
+#container .offline > div .text h2 {color: #f1f1f1; font-size: 2.38rem; font-weight: 700; text-align: center;}
+#container .offline > div .text p {color: #f1f1f1; font-weight: 300; text-align: center; line-height: 140%; letter-spacing: -0.01em; margin: 30px 0;}
+#container .offline > div .text a {
+    display: block;
+    width: 89px; height: 35px;
+    border: 1px solid #f1f1f1;
+    text-align: center; line-height: 35px;
+    letter-spacing: -0.01em; color: #f1f1f1;
+    margin: 0 auto;
+    font-weight: 300;
+    position: relative;
+    transition: all .4s;
+}
+#container .offline > div .text a:hover {color: #000; font-weight: 500;}
+#container .offline > div .text a::after {
+    content: '';
+    display: block;
+    width: 0; height: 100%;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .4s;
+    z-index: -1;
+}
+#container .offline > div .text a:hover::after {width: 100%;}
+#container .offline .right {width: 50%;}
+#container .offline .right .right_bg {
+    width: 100%; height: 500px;
+    background: url(../img/offline_bg02.png)no-repeat center center;
+    position: relative;
+}
+#container .offline .right .right_bg::after {
+    content: '';
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+footer { width: 100%; height: 493px; background-color: #010101; margin-top: 180px;}
+footer .ft_in {max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between;}
+footer .ft_in .left > div {width: 300px; height: 39px; padding-top: 80px;}
+footer .ft_in .left > div img {width: 100%; height: auto;}
+footer .ft_in .left .ft_menu {display: flex; margin: 89px 0 50px 0;}
+footer .ft_in .left .ft_menu li {margin-left: 30px;}
+footer .ft_in .left .ft_menu li:first-child {margin-left: 0;}
+footer .ft_in .left .ft_menu li a {color: #f1f1f1; font-weight: 300;}
+footer .ft_in .left p {color: #f1f1f1; font-weight: 300; line-height: 200%; font-size: 0.88rem;}
+footer .ft_in .left .copy {color: #aaa; line-height: 0; margin-top: 40px;}
+footer .ft_in .ft_sns {display: flex;}
+footer .ft_in .ft_sns li {margin-left: 30px;}
+footer .ft_in .ft_sns li:first-child {margin-left: 0;}
+footer .ft_in .ft_sns li a {
+    display: block;
+    width: 27px; height: 27px;
+    background: url(../img/icon_facebook.png)no-repeat center center;
+    font-size: 0;
+    margin-top: 169px;
+}
+footer .ft_in .ft_sns li:nth-child(2) a {background-image: url(../img/icon_instagram.png);}
+footer .ft_in .ft_sns li:nth-child(3) a {background-image: url(../img/icon_X.png);}
+footer .ft_in .ft_sns li:nth-child(4) a {background-image: url(../img/icon_youtube.png);}

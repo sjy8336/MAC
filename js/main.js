@@ -1,6 +1,6 @@
 const mvS = new Swiper('.mv_in', {
     loop: true,
-    autoplay:{delay:2500},
+    autoplay:{delay:3500},
     scrollbar: {el: '.mv_in .swiper-scrollbar'},
 });
 const bestS = new Swiper('.best_s', {
@@ -18,5 +18,13 @@ const newS = new Swiper('.new_s', {
     navigation:{
         prevEl:'.new_in .swiper-button-prev',
         nextEl:'.new_in .swiper-button-next',
+    },
+});
+const promS = new Swiper('.prom_s', {
+    loop: true,
+    slidesPerView: 1,
+    navigation:{
+        prevEl:'.prom_in .prom_slider .swiper-button-prev',
+        nextEl:'.prom_in .prom_slider .swiper-button-next',
     },
 });
