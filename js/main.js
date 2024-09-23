@@ -14,7 +14,7 @@ const bestS = new Swiper('.best_s', {
 });
 const newS = new Swiper('.new_s', {
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     navigation:{
         prevEl:'.new_in .swiper-button-prev',
         nextEl:'.new_in .swiper-button-next',
@@ -22,9 +22,24 @@ const newS = new Swiper('.new_s', {
 });
 const promS = new Swiper('.prom_s', {
     loop: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
+    spaceBetween: 50,
     navigation:{
-        prevEl:'.prom_in .prom_slider .swiper-button-prev',
-        nextEl:'.prom_in .prom_slider .swiper-button-next',
+        prevEl:'.prom_slider .swiper-button-prev',
+        nextEl:'.prom_slider .swiper-button-next',
     },
 });
+const promP = document.querySelector('.prom_slider .swiper-button-prev');
+const promN = document.querySelector('.prom_slider .swiper-button-next');
+const promSetin = document.querySelector('.prom_txt .setin_txt');
+const promLover = document.querySelector('.prom_txt .lover_txt');
+/* promP.addEventListener('click', function(){
+    promP = !promP
+    if(promP == false){
+        promLover.style.display='inline';
+        promSetin.style.display='none';
+    }else{
+        promLover.style.display='none';
+        promSetin.style.display='inline';
+    };
+}); */
