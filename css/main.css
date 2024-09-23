@@ -13,14 +13,14 @@ header:hover .headerin h1 a {background-image: url(../img/mac_logo_b.png);}
 header .headerin .gnb {display: flex;}
 header .headerin .gnb>li {margin-left: 40px;}
 header .headerin .gnb>li:first-child {margin-left: 50px;}
-header .headerin .gnb>li>a {color: #f1f1f1; font-weight: 500; transition: all .4s; letter-spacing: -0.02em;}
-header:hover .headerin .gnb>li>a {color: #888; letter-spacing: -0.02em;}
+header .headerin .gnb>li>a {color: #fff; font-weight: 500; transition: all .4s; letter-spacing: -0.02em;}
+header:hover .headerin .gnb>li>a {color: #aaa; letter-spacing: -0.02em;}
 header .headerin .gnb>li>a:hover {color: #000;}
 header .headerin .gnb>li .sub {
     width: 100%; height: 337px;
     position: absolute; top: 80px; left: 0; 
     background-color: #fff;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #efefef;
     z-index: 10;
 }
 header .headerin .gnb .product .sub {display: none;}
@@ -41,7 +41,7 @@ header .headerin .gnb .product .sub .subin .setin_lip::after {
     content: '';
     display: block;
     width: 1px; height: 267px;
-    background-color: #eee;
+    background-color: #efefef;
     position: absolute;
     top: 30px; right: 461px;
 }
@@ -67,7 +67,7 @@ header .headerin .gnb .makeup_serv .sub .subin .serv_img::after {
     content: '';
     display: block;
     width: 1px; height: 267px;
-    background-color: #eee;
+    background-color: #efefef;
     position: absolute;
     top: 30px; right: 879px;
 }
@@ -129,8 +129,8 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #mainVisual .mv_in .mv_prod .mv_face .txt a {
     display: block;
     width: 110px; height: 35px;
-    border: 1px solid #aaa;
-    color: #aaa;
+    border: 1px solid #fff;
+    color: #fff;
     line-height: 35px; text-align: center;
     position: relative; left: 45px;
     margin: 30px auto 0 auto;
@@ -140,7 +140,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #mainVisual .mv_in .mv_prod .mv_face .txt a::after {
     content: '';
     display: block;
-    background-color: #aaa;
+    background-color: #fff;
     width: 0; height: 100%;
     position: absolute;
     top: 0; left: 0;
@@ -172,7 +172,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     top: 0px; right: 0px;
 }
 #container .best .swiper-scrollbar {
-    bottom: -42px; background-color: #d9d9d9;
+    bottom: -42px; background-color: #ddd;
     width: 1540px; height: 2px;
 }
 #container .best .swiper-scrollbar-drag {background-color: #000;}
@@ -199,16 +199,16 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     position: absolute;
     top: 240px; left: 220px;
 }
-#container .new .new_in .new_s .new_list li .text h2 {color: #f1f1f1; font-size: 1.50rem; font-weight: 400;}
-#container .new .new_in .new_s .new_list li .text h3 {color: #f1f1f1; font-size: 2.38rem; font-weight: 600; margin: 20px 0 50px 0;}
-#container .new .new_in .new_s .new_list li .text p {color: #f1f1f1; line-height: 150%; margin-bottom: 30px; letter-spacing: -0.01em; font-weight: 200;}
+#container .new .new_in .new_s .new_list li .text h2 {color: #fff; font-size: 1.50rem; font-weight: 400;}
+#container .new .new_in .new_s .new_list li .text h3 {color: #fff; font-size: 2.38rem; font-weight: 600; margin: 20px 0 50px 0;}
+#container .new .new_in .new_s .new_list li .text p {color: #fff; line-height: 150%; margin-bottom: 30px; letter-spacing: -0.01em; font-weight: 200;}
 #container .new .new_in .new_s .new_list li .text a {
     display: block;
     width: 91px; height: 30px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #fff;
     margin-top: 40px; font-size: 0.88rem;
     text-align: center; line-height: 30px;
-    color: #f1f1f1; font-weight: 200;
+    color: #fff; font-weight: 200;
     position: relative;
     transition: all .4s;
 }
@@ -217,7 +217,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     content: '';
     display: block;
     width: 0; height: 100%;
-    background-color: #f1f1f1;
+    background-color: #fff;
     position: absolute; left: 0; top: 0;
     transition: all .4s;
     z-index: -1;
@@ -252,7 +252,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     position: relative;
     transition: all .4s;
 }
-#container .try a:hover {color: #f1f1f1; font-weight: 300;}
+#container .try a:hover {color: #fff; font-weight: 300;}
 #container .try a::after {
     content: '';
     display: block;
@@ -266,11 +266,11 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #container .try a:hover::after {width: 100%;}
 #container .prom {width: 100%; height: 630px; background-color: #010101; margin: 0 0 180px 0; position: relative; overflow: hidden;}
 /* #container .prom .prom_in {max-width: 1600px; height: 100%; margin: 0 auto; padding-bottom: 130px;} */
-#container .prom h2 {font-size: 2.38rem; font-weight: 700; color: #f1f1f1; padding: 100px 0 0 190px;}
+#container .prom h2 {font-size: 2.38rem; font-weight: 700; color: #fff; padding: 100px 0 0 190px;}
 #container .prom .promotion {display: flex; justify-content: space-between;}
 #container .prom .promotion .prom_txt {padding-left: 190px;}
 #container .prom .promotion .prom_txt .text h3 {
-    color: #f1f1f1; font-size: 1.25rem; 
+    color: #fff; font-size: 1.25rem; 
     letter-spacing: -0.02em; font-weight: 600; 
     margin-top: 50px;
 }
@@ -282,8 +282,8 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #container .prom .promotion .prom_txt .text a {
     display: block;
     width: 106px; height: 35px;
-    border: 1px solid #f1f1f1;
-    color: #f1f1f1; text-align: center;
+    border: 1px solid #fff;
+    color: #fff; text-align: center;
     line-height: 35px; letter-spacing: -0.01em;
     transition: all .4s;
     position: relative;
@@ -295,7 +295,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     content: '';
     display: block;
     width: 0; height: 100%;
-    background-color: #f1f1f1;
+    background-color: #fff;
     position: absolute;
     top: 0; left: 0;
     z-index: -1;
@@ -316,7 +316,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #container .prod .prod_tab {display: flex; justify-content: center; margin: 30px 0 60px 0;}
 #container .prod .prod_tab li {margin-left: 30px;}
 #container .prod .prod_tab li:first-child {margin-left: 0;}
-#container .prod .prod_tab li a { color: #666; font-weight: 600;}
+#container .prod .prod_tab li a { color: #aaa; font-weight: 600;}
 #container .prod .prod_tab li:first-child a {color: #000;}
 #container .prod .prod_tab li:hover a {color: #000;}
 #container .prod .prod_up {display: flex; justify-content: space-between; margin-bottom: 50px;}
@@ -339,7 +339,7 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     position: relative;
     transition: all .4s;
 }
-#container .prod > a:hover {color: #f1f1f1; font-weight: 400;}
+#container .prod > a:hover {color: #fff; font-weight: 400;}
 #container .prod > a::after {
     content: '';
     display: block;
@@ -353,14 +353,14 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
 #container .prod > a:hover::after {width: 100%;}
 #container .trend {margin: 180px 0; display: flex }
 #container .trend .tren_img {width: 40%;}
-#container .trend .tren_bg {width: 60%; height: 900px; background-color: #010101; position: relative; z-index: -3;}
+#container .trend .tren_bg {width: 60%; height: 900px; background-color: #010101; position: relative; z-index: 1;}
 #container .trend .tren_bg .bg_txt p:nth-child(1) {
-    color: #2d2d2d; font-size: 4.38rem;
+    color: rgba(85, 85, 85, 0.5); font-size: 4.38rem;
     font-weight: 800; letter-spacing: 0.3em;
     position: absolute;
     top: 50%; left: -270px; 
     transform: rotate(90deg) translateY(-50%);
-    z-index: -1;
+    z-index: 2;
 }
 #container .trend .tren_bg .bg_txt p:nth-child(2) {
     font-size: 4.38rem;
@@ -369,14 +369,14 @@ header:hover .headerin .util li:nth-child(3) a {background-image: url(../img/ico
     position: absolute;
     top: 50%; right: -200px; 
     transform: rotate(90deg) translateY(-50%);
-    z-index: -1;
+    z-index: 2;
 }
 #container .trend .tren_bg h2 {color: #f1f1f1; font-size: 2.38rem; font-weight: 700; text-align: center; padding-top: 192px;}
 #container .trend .tren_bg > p {color: #f1f1f1; text-align: center; letter-spacing: -0.01em; margin: 20px 0 60px 0;}
 #container .trend .tren_bg .tren_prod {display: flex; justify-content: center;}
 #container .trend .tren_bg .tren_prod li {margin-left: 16px;}
 #container .trend .tren_bg .tren_prod li:first-child {margin-left: 0;}
-#container .trend .tren_bg .tren_prod li a .img_box {width: 260px; height: 260px; background-color: #efefef;}
+#container .trend .tren_bg .tren_prod li a .img_box {width: 260px; height: 260px; background-color: #efefef; position: relative; z-index: 5;}
 #container .trend .tren_bg .tren_prod li a .img_box img {width: 100%; height: auto;}
 #container .trend .tren_bg .tren_prod li a .name {color: #f1f1f1; text-align: center; letter-spacing: -0.01em; font-weight: 300; margin: 15px 0;}
 #container .trend .tren_bg .tren_prod li a .price {color: #f1f1f1; text-align: center; font-size: 0.88rem; font-weight: 200;}
