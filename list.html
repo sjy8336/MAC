@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>립스틱 | MAC 공식 온라인 몰</title>
     <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/list.css">
     <script src="./js/list.js" defer></script>
 </head>
@@ -137,18 +138,18 @@
                 </ul>
             </div>
         </header>
-        <div id="mainViausl">
+        <div id="mainVisual">
             <div class="mv_bg">
-                <select name="product" id="prod_sel">
+                <select name="product" id="prod_sel" class="prod_selc">
                     <option value="face">Face</option>
-                    <option value="lip">Lip</option>
+                    <option selected value="lip">Lip</option>
                     <option value="eye">Eye</option>
                     <option value="skin">Skin</option>
                     <option value="brush">Brush</option>
                 </select>
             </div>
         </div>
-        <div class="list">
+        <div id="list">
             <h2>LIP</h2>
             <ul class="tab">
                 <li><a href="#">립스틱</a></li>
@@ -158,102 +159,109 @@
                 <li><a href="#">립 팔레트</a></li>
                 <li><a href="#">립 케어</a></li>
             </ul>
-            <select name="order" id="order">
+            <select name="order" id="order" class="order_selc">
+                <option value="new">상품정렬</option>
                 <option value="new">신상품순</option>
-                <option value="new">인기순</option>
-                <option value="new">낮은 가격순</option>
-                <option value="new">높은 가격순</option>
+                <option value="popular">인기순</option>
+                <option value="cheap">낮은 가격순</option>
+                <option value="expensive">높은 가격순</option>
             </select>
             <ul class="prod_list">
                 <li><a href="#">
-                    <div class="new">
-                        <p>NEW</p>
+                    <div class="bg">
+                        <div class="new">
+                            <p>NEW</p>
+                        </div>
+                        <img src="./img/prod_lip01.png" alt="맥시멀 슬릭 새틴 립스틱">
                     </div>
-                    <img src="./img/prod_lip01.png" alt="맥시멀 슬릭 새틴 립스틱">
                     <p class="key">30가지 컬러, 새틴 샤인 피니시, NEW 모던 매트 패키징</p>
                     <h3>맥시멀 슬릭 새틴 립스틱</h3>
                     <p class="price">39,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <div class="new">
-                        <p>NEW</p>
+                    <div class="bg">
+                        <div class="new">
+                            <p>NEW</p>
+                        </div>
+                        <img src="./img/prod_lip02.png" alt="맥시멀 슬릭 새틴 립스틱 인 더 클리어">
                     </div>
-                    <img src="./img/prod_lip02.png" alt="맥시멀 슬릭 새틴 립스틱 인 더 클리어">
                     <p class="key">멀티유즈 클리어 립밤, 새틴 샤인 피니시, NEW 모던 매트 패키징</p>
                     <h3>맥시멀 슬릭 새틴 립스틱 인 더 클리어</h3>
                     <p class="price">39,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <div class="best">
-                        <p>BEST</p>
+                    <div class="bg">
+                        <div class="best">
+                            <p>BEST</p>
+                        </div>
+                        <img src="./img/prod_lip03.png" alt="맥시멀 실키 매트 립스틱">
                     </div>
-                    <img src="./img/prod_lip03.png" alt="맥시멀 실키 매트 립스틱">
                     <p class="key">40가지 시그니처 컬러, 실키 매트 피니시</p>
                     <h3>맥시멀 슬릭 새틴 립스틱</h3>
                     <p class="price">39,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip04.png" alt="맥시멀 실키 매트 립스틱 / 비바 글램">
+                    <div class="bg"><img src="./img/prod_lip04.png" alt="맥시멀 실키 매트 립스틱 / 비바 글램"></div>
                     <p class="key">4가지 쉐이드, 수익금 100% 기부</p>
                     <h3>맥시멀 실키 매트 립스틱 / 비바 글램</h3>
                     <p class="price">39,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip05.png" alt="맥시멀 실키 매트 립스틱 / 미니 맥">
+                    <div class="bg"><img src="./img/prod_lip05.png" alt="맥시멀 실키 매트 립스틱 / 미니 맥"></div>
                     <p class="key">미니 사이즈, 실키 매트 피니시</p>
                     <h3>맥시멀 실키 매트 립스틱 / 미니 맥</h3>
                     <p class="price">26,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip06.png" alt="락드 키스 24아워 립스틱">
+                    <div class="bg"><img src="./img/prod_lip06.png" alt="락드 키스 24아워 립스틱"></div>
                     <p class="key">키스프루프, 트랜스퍼프루프</p>
                     <h3>락드 키스 24아워 립스틱</h3>
                     <p class="price">52,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip07.png" alt="스쿼트 플럼핑 글로스 스틱">
+                    <div class="bg"><img src="./img/prod_lip07.png" alt="스쿼트 플럼핑 글로스 스틱"></div>
                     <p class="key">글로스 밤</p>
                     <h3>스쿼트 플럼핑 글로스 스틱</h3>
                     <p class="price">39,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip08.png" alt="락드 키스 잉크 24아워 립컬러">
+                    <div class="bg"><img src="./img/prod_lip08.png" alt="락드 키스 잉크 24아워 립컬러"></div>
                     <p class="key">24시간 강력 픽싱, 초경량 텍스처, 비비드 컬러</p>
                     <h3>락드 키스 잉크 24아워 립컬러</h3>
                     <p class="price">52,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip09.png" alt="파우더 키스 벨벳 블러 슬림 스틱">
+                    <div class="bg"><img src="./img/prod_lip09.png" alt="파우더 키스 벨벳 블러 슬림 스틱"></div>
                     <p class="key">더욱 강렬해진 24가지 독보적 벨벳 컬러</p>
                     <h3>파우더 키스 벨벳 블러 슬림 스틱</h3>
                     <p class="price">49,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip10.png" alt="파우더 키스 립스틱">
+                    <div class="bg"><img src="./img/prod_lip10.png" alt="파우더 키스 립스틱"></div>
                     <p class="key">가볍고 편안한 텍스처, 매트 피니쉬</p>
                     <h3>파우더 키스 립스틱</h3>
                     <p class="price">43,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip11.png" alt="러스터글래스 립스틱">
+                    <div class="bg"><img src="./img/prod_lip11.png" alt="러스터글래스 립스틱"></div>
                     <p class="key">가볍고 촉촉한 쉬어 샤인 텍스쳐, 맑고 다채로운 컬러</p>
                     <h3>러스터글래스 립스틱</h3>
                     <p class="price">43,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip12.png" alt="레트로 매트 립스틱">
+                    <div class="bg"><img src="./img/prod_lip12.png" alt="레트로 매트 립스틱"></div>
                     <p class="key">강한 지속력, 강력한 발색, 매트 피니쉬</p>
                     <h3>레트로 매트 립스틱</h3>
                     <p class="price">38,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip13.png" alt="프로스트 립스틱">
+                    <div class="bg"><img src="./img/prod_lip13.png" alt="프로스트 립스틱"></div>
                     <p class="key">세미-러스터 피니쉬, 중간 정도의 커버리지, 펄감이 함유</p>
                     <h3>프로스트 립스틱</h3>
                     <p class="price">38,000원</p>
                 </a></li>
                 <li><a href="#">
-                    <img src="./img/prod_lip14.png" alt="레트로 매트 리퀴드 립컬러">
+                    <div class="bg"><img src="./img/prod_lip14.png" alt="레트로 매트 리퀴드 립컬러"></div>
                     <p class="key">레트로 매트 리퀴드 립컬러</p>
                     <h3>맥시멀 슬릭 새틴 립스틱</h3>
                     <p class="price">43,000원</p>
