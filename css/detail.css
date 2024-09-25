@@ -137,7 +137,7 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
     text-align: center; padding-left: 40px;
     font-size: 2.38rem; font-weight: 600;
 }
-#information .review .total_revi .star p {text-align: center; margin: 24px 0 0 -140px; letter-spacing: -0.02em; color: #aaa;}
+#information .review .total_revi .star p {text-align: center; margin: 24px 0 0 -140px; letter-spacing: -0.02em; color: #555;}
 #information .review .total_revi .star p span{font-weight: 600;}
 #information .review .total_revi .graph {display: flex; padding: 0 70px; border-left: 1px solid #efefef; border-right: 1px solid #efefef;}
 #information .review .total_revi .graph .txt {margin-right: 9px;}
@@ -245,7 +245,6 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 #information .review .page .page_num li:first-child {margin-left: 0;}
 #information .review .page .page_num li a {color: #555;}
 #information .review .page .page_num li.on a {color: #000;}
-#information .review .page .arrows {}
 #information .review .page .arrows button {
     background-color: transparent;
     border: none;
@@ -257,10 +256,8 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 }
 #information .review .page .arrows .prev {left: 0;}
 #information .review .page .arrows .next {right: 0; background-image: url(../detail_img/btn_next.png);}
-#information .recommend {}
 #information .recommend h2 {font-size: 2.38rem; font-weight: 700; margin: 0 0 50px;}
 #information .recommend .prod_list {display: flex; justify-content: space-between;}
-#information .recommend .prod_list li {}
 #information .recommend .prod_list li a {display: block; width: calc((100% - 10) / 5);}
 #information .recommend .prod_list li a .bg {width: 100%; height: auto; background-color: #efefef;}
 #information .recommend .prod_list li a .bg img {width: 100%; height: auto;}
