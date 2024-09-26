@@ -279,8 +279,8 @@
     color: rgba(85, 85, 85, 0.5); font-size: 4.38rem;
     font-weight: 800; letter-spacing: 0.3em;
     position: absolute;
-    top: 50%; left: -270px; 
-    transform: rotate(90deg) translateY(-50%);
+    top: 430px; left: -240px; 
+    transform: rotate(90deg);
     z-index: 2;
 }
 #container .trend .tren_bg .bg_txt p:nth-child(2) {
@@ -288,8 +288,8 @@
     -webkit-text-stroke: 2px rgba(119, 140, 186, .38);
     font-weight: 800; letter-spacing: 0.3em;
     position: absolute;
-    top: 50%; right: -200px; 
-    transform: rotate(90deg) translateY(-50%);
+    top: 430px; right: -230px; 
+    transform: rotate(90deg) ;
     z-index: 2;
 }
 #container .trend .tren_bg h2 {color: #f1f1f1; font-size: 2.38rem; font-weight: 700; text-align: center; padding-top: 192px;}
