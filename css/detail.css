@@ -258,7 +258,7 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 #information .review .page .arrows .next {right: 0; background-image: url(../detail_img/btn_next.png);}
 #information .recommend h2 {font-size: 2.38rem; font-weight: 700; margin: 0 0 50px;}
 #information .recommend .prod_list {display: flex; justify-content: space-between;}
-#information .recommend .prod_list li a {display: block; width: calc((100% - 10) / 5);}
+#information .recommend .prod_list li a {display: block; width: 290px;}
 #information .recommend .prod_list li a .bg {width: 100%; height: auto; background-color: #efefef;}
 #information .recommend .prod_list li a .bg img {width: 100%; height: auto;}
 #information .recommend .prod_list li a h3 {text-align: center; margin: 15px 0; letter-spacing: -0.02em;}
