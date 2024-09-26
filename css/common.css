@@ -45,7 +45,7 @@ header .headerin .gnb .product .sub .subin .setin_lip::after {
     position: absolute;
     top: 30px; right: 461px;
 }
-header .headerin .gnb .product .sub .subin .setin_lip div {width: 400px; height: 200px; background-color: aquamarine; overflow: hidden;}
+header .headerin .gnb .product .sub .subin .setin_lip div {width: 400px; height: 200px; overflow: hidden;}
 header .headerin .gnb .product .sub .subin .setin_lip div img {width: 100%; height: auto;}
 header .headerin .gnb .product .sub .subin .setin_lip h2 {letter-spacing: -0.02em; margin: 15px 0 10px 0;}
 header .headerin .gnb .product .sub .subin .setin_lip p {font-size: 0.88rem; color: #555;}
@@ -71,16 +71,16 @@ header .headerin .gnb .makeup_serv .sub .subin .serv_img::after {
     top: 30px; right: 879px;
 }
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual {margin-right: 19px;}
-header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual div {width: 400px; height: 200px; overflow: hidden; background-color: aqua;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual div {width: 400px; height: 200px; overflow: hidden;}
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual div img {width: 100%; height: auto;}
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual h2 {margin: 15px 0 10px 0; letter-spacing: -0.02em;}
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .virtual p {font-size: 0.88rem; color: #555;}
-header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup div {width: 400px; height: 200px; overflow: hidden; background-color: aqua;}
+header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup div {width: 400px; height: 200px; overflow: hidden;}
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup div img {width: 100%; height: auto;}
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup h2 {margin: 15px 0 10px 0; letter-spacing: -0.02em;}
 header .headerin .gnb .makeup_serv .sub .subin .serv_img .makeup p {font-size: 0.88rem; color: #555;}
 header .headerin .gnb .brand .sub .subin {width: 1245px; margin: 30px auto 0 auto; display: flex; justify-content: space-between;}
-header .headerin .gnb .brand .sub .subin a div {width: 300px; height: 200px; overflow: hidden; background-color: aqua;}
+header .headerin .gnb .brand .sub .subin a div {width: 300px; height: 200px; overflow: hidden;}
 header .headerin .gnb .brand .sub .subin a div img {width: 100%; height: auto;}
 header .headerin .gnb .brand .sub .subin a p {text-align: center; margin-top: 15px;}
 header .headerin .util {

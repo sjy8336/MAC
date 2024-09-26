@@ -174,7 +174,7 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 #information .review .photo_revi .photo {display: flex; justify-content: space-between; margin: 0 0 30px;}
 #information .review .photo_revi .photo li a {
     display: block;
-    width: 180px; height: 180px; background-color: aqua;
+    width: 180px; height: 180px;;
     font-size: 0;
 }
 #information .review .photo_revi .photo li:nth-child(1) a {background: url(../detail_img/review_photo01.png) no-repeat center;}
