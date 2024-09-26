@@ -2,7 +2,7 @@
 #mainVisual .mv_in {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0;}
 #mainVisual .mv_in .mv_prod {position: relative;}
 #mainVisual .mv_in .mv_prod>div .bg img {width: 100%; height: auto;}
-#mainVisual .mv_in .mv_prod>div .txt {
+#mainVisual .mv_in .mv_prod .mv_face .txt {
     width: 50%;
     position: absolute;
     left: 0; top: 621px;
@@ -27,6 +27,7 @@
     position: relative; left: 45px;
     margin: 30px auto 0 auto;
     z-index: 20;
+    font-weight: 300;
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt a:hover {color: #000; font-weight: 500;}
 #mainVisual .mv_in .mv_prod .mv_face .txt a::after {
@@ -40,6 +41,34 @@
     z-index: -1;
 }
 #mainVisual .mv_in .mv_prod .mv_face .txt a:hover::after {width: 100%;}
+#mainVisual .mv_in .mv_prod .mv_lip .txt {
+    width: 50%;
+    position: absolute;
+    right: 0; top: 621px;
+}
+#mainVisual .mv_in .mv_prod .mv_lip .txt a {
+    display: block;
+    width: 110px; height: 35px;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 35px; text-align: center;
+    position: relative; right: 100px;
+    margin: 100px auto 0 auto;
+    z-index: 20;
+    font-weight: 300;
+}
+#mainVisual .mv_in .mv_prod .mv_lip .txt a:hover {color: #000; font-weight: 500;}
+#mainVisual .mv_in .mv_prod .mv_lip .txt a::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    width: 0; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .6s;
+    z-index: -1;
+}
+#mainVisual .mv_in .mv_prod .mv_lip .txt a:hover::after {width: 100%;}
 #mainVisual .mv_in .swiper-scrollbar {
     bottom: 83px; left: 50%;
     transform: translateX(-50%);
