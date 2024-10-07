@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/common.js" defer></script>
+    <script src="./js/detail.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -141,12 +146,14 @@
         </header>
         <div id="buy">
             <div class="buy_img">
-                <ul class="sub_img">
-                    <li class="on"><a href="#"><img src="./detail_img/detail_01.png" alt="맥시멀 슬릭 새틴 립스틱"></a></li>
-                    <li><a href="#"><img src="./detail_img/detail_02.png" alt="맥시멀 슬릭 새틴 립스틱 매트한 질감표현"></a></li>
-                    <li><a href="#"><img src="./detail_img/detail_03.png" alt="맥시멀 슬릭 새틴 립스틱 다양한 핑크 컬러"></a></li>
-                    <li><a href="#"><img src="./detail_img/detail_04.png" alt="맥시멀 슬릭 새틴 립스틱와 함께하면 좋은 립펜슬 "></a></li>
-                </ul>
+                <div thumbsSlider="" class="swiper sub_slide">
+                    <ul class="swiper-wrapper sub_img">
+                        <li class="swiper-slide"><a href="#"><img src="./detail_img/detail_01.png" alt="맥시멀 슬릭 새틴 립스틱"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./detail_img/detail_02.png" alt="맥시멀 슬릭 새틴 립스틱 매트한 질감표현"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./detail_img/detail_03.png" alt="맥시멀 슬릭 새틴 립스틱 다양한 핑크 컬러"></a></li>
+                        <li class="swiper-slide"><a href="#"><img src="./detail_img/detail_04.png" alt="맥시멀 슬릭 새틴 립스틱와 함께하면 좋은 립펜슬 "></a></li>
+                    </ul>
+                </div>
                 <div class="swiper buy_slide">
                     <ul class="swiper-wrapper buy_s">
                         <li class="swiper-slide"><a href="#"><img src="./detail_img/detail_01.png" alt="맥시멀 슬릭 새틴 립스틱"></a></li>
@@ -215,7 +222,7 @@
                             <li><a href="#"><img src="./detail_img/orange_color03.png" alt="모란지"></a></li>
                             <li><a href="#"><img src="./detail_img/orange_color04.png" alt="에스프레소 유어셀프"></a></li>
                         </ul>
-                        <div class="trend_list"><div class="on"><a href="#"><img src="./detail_img/trend_color.png" alt="틸티드 데님"></a></div></div>
+                        <div class="trend_list color_list"><div class="on"><a href="#"><img src="./detail_img/trend_color.png" alt="틸티드 데님"></a></div></div>
                         <ul class="neutral_list color_list">
                             <li class="on"><a href="#"><img src="./detail_img/neutral_color01.png" alt="트루스 비 언톨드"></a></li>
                             <li><a href="#"><img src="./detail_img/neutral_color02.png" alt="필름 누아르"></a></li>
@@ -298,8 +305,8 @@
                                     1. 화장품 사용 시 또는 사용 후 직사광선에 의하여 사용부위가 붉은 반점, 부어오름<br>
                                     또는 가려움증 등의 이상 증상이나 부작용이 있는 경우에는 전문의 등과 상담할 것.<br>
                                     2. 상처가 있는 부위 등에는 사용을 하지 말 것.3. 보관 및 취급 시 주의사항<br>
-                                    가) 어린이의 손이 닿지 않는 곳에 보관할 것.<br>
-                                    나) 직사광선을 피해서 보관할 것.<br>
+                                    가. 어린이의 손이 닿지 않는 곳에 보관할 것.<br>
+                                    나. 직사광선을 피해서 보관할 것.<br>
                                     * 기타 제품 특이적인 주의사항은 제품 포장 참조
                                 </p>
                             </div>

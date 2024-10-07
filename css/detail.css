@@ -5,18 +5,16 @@ header .headerin .util li:nth-child(2) a {background-image: url(../img/icon_mypa
 header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shopping_b.png);}/* header 끝 */
 #buy {max-width: 1510px; margin: 30px auto 0; display: flex; justify-content: space-between;}
 #buy .buy_img {display: flex;}
-#buy .buy_img .sub_img {margin-right: 15px;}
-#buy .buy_img .sub_img li {margin-bottom: 15px;}
+#buy .buy_img .sub_img {margin-right: 15px; flex-direction: column; width: 100px;}
+#buy .buy_img .sub_img li {margin-bottom: 15px; width: 100%; height: 100px;}
 #buy .buy_img .sub_img li:last-child {margin-bottom: 0;}
-#buy .buy_img .sub_img li.on {border: 1px solid #ddd; width: 100px; height: 100px; position: relative;}
 #buy .buy_img .sub_img li a {display: block; width: 100px; height: 100px;}
-#buy .buy_img .sub_img li.on a {width: 80px; height: 80px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 #buy .buy_img .sub_img li a img {width: 100%; height: auto;}
-#buy .buy_img .buy_slide {width: 600px; height: 600px; position: relative;}
-#buy .buy_img .buy_slide .buy_s {display: flex; width: 100%; height: 100%; overflow: hidden;}
-#buy .buy_img .buy_slide .buy_s li a {display: block; width: 600px; height: 600px;}
-#buy .buy_img .buy_slide .buy_s li a img {width: 100%; height: auto;}
-#buy .buy_img .buy_slide .arrows .swiper-button-prev {}
+#buy .buy_img .sub_img .swiper-slide {opacity: .5;}
+#buy .buy_img .sub_img .swiper-slide-thumb-active {opacity: 1;}
+#buy .buy_img .buy_slide {width: 600px; height: 600px;}
+#buy .buy_img .buy_slide .swiper-button-prev {transform: scale(.7); color: #aaa;}
+#buy .buy_img .buy_slide .swiper-button-next {transform: scale(.7); color: #aaa;}
 #buy .buy_txt {width: 695px;}
 #buy .buy_txt .prod_tit p {letter-spacing: -0.02em;}
 #buy .buy_txt .prod_tit p:nth-child(1) {font-size: 1.13rem; letter-spacing: -0.01em;}
@@ -35,11 +33,6 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 #buy .buy_txt .option .color_tab li.on a {color: #000;}
 #buy .buy_txt .option .color_img {width: 100%; height: 47px; position: relative; margin-bottom: 30px;}
 #buy .buy_txt .option .color_img .color_list {display: flex; position: absolute; top: 0; left: 0;}
-#buy .buy_txt .option .color_img .red_list {display: none;}
-#buy .buy_txt .option .color_img .berry_list {display: none;}
-#buy .buy_txt .option .color_img .orange_list {display: none;}
-#buy .buy_txt .option .color_img .trend_list {display: none;}
-#buy .buy_txt .option .color_img .neutral_list {display: none;}
 #buy .buy_txt .option .color_img .color_list li {width: 45px; height: 45px; margin-right: 10px;}
 #buy .buy_txt .option .color_img .color_list li.on {border: 1px solid #000; border-radius: 100%; box-sizing: border-box;}
 #buy .buy_txt .option .color_img .color_list li:last-child {margin-right: 0;}
@@ -48,7 +41,7 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 #buy .buy_txt .option .color_img .color_list li a img {width: 100%; height: auto;}
 #buy .buy_txt .option .color_img .trend_list div {width: 45px; height: 45px;}
 #buy .buy_txt .option .color_img .trend_list div a {display: block; width: 100%; height: 100%;}
-#buy .buy_txt .option .color_img .trend_list div a img {width: 100%; height: auto;}
+#buy .buy_txt .option .color_img .trend_list div a img {width: 100%; height: auto; transform: scale(0.8);}
 #buy .buy_txt .option .color_img .trend_list div.on {border: 1px solid #000; border-radius: 100%; box-sizing: border-box;}
 #buy .buy_txt .option .op_selc {width: 100%; height: 109px; background-color: #efefef; padding: 20px; position: relative;}
 #buy .buy_txt .option .op_selc .name {letter-spacing: -0.02em;}
@@ -176,11 +169,13 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 }
 #information .review .revi_tit h2 {font-size: 1.13rem; font-weight: 600;}
 #information .review .revi_tit .filter {display: flex;}
+#information .review .revi_tit .filter .check input {cursor: pointer;}
 #information .review .revi_tit .filter .check label {margin-left: 10px; letter-spacing: -0.02em;}
 #information .review .revi_tit .filter .order {display: flex;}
 #information .review .revi_tit .filter .order li {margin-left: 15px;}
 #information .review .revi_tit .filter .order li:first-child {margin-left: 30px;}
 #information .review .revi_tit .filter .order li a {color: #aaa; letter-spacing: -0.02em;}
+#information .review .revi_tit .filter .order li:hover a {color: #000;}
 #information .review .revi_tit .filter .order li.on a {color: #000;}
 #information .review .revi_txt li {padding: 20px 0; border-bottom: 1px solid #efefef; display: flex; justify-content: space-between;}
 #information .review .revi_txt li:last-child {border: none;} 
