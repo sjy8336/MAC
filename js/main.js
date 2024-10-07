@@ -12,6 +12,7 @@ const bestS = new Swiper('.best_s', {
     },
     scrollbar: {el: '.best .swiper-scrollbar'},
 });
+const bestImg = document.querySelectorAll('.bst_list img')
 const newS = new Swiper('.new_s', {
     loop: true,
     slidesPerView: "auto",

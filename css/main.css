@@ -78,8 +78,16 @@
 #mainVisual .mv_in .swiper-scrollbar-drag {background-color: #555;}
 #container .best {max-width: 1600px; margin: 100px auto 210px auto; position: relative;}
 #container .best h2 {text-align: center; font-size: 2.38rem; font-weight: 800; margin-bottom: 55px;}
-#container .best .best_s .bst_list > div > a > div {width: 270px; height: 270px; background-color: #efefef;}
-#container .best .best_s .bst_list > div > a > div img {width: 100%; height: auto;}
+#container .best .best_s .bst_list > div > a > div {width: 270px; height: 270px; background-color: #efefef; position: relative;}
+#container .best .best_s .bst_list > div > a > div img {
+    width: 100%; height: auto;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .4s;
+}
+#container .best .best_s .bst_list > div > a > div:hover img:first-child {opacity: 0;}
+#container .best .best_s .bst_list > div > a > div img:last-child {opacity: 0;}
+#container .best .best_s .bst_list > div > a > div:hover img:last-child {opacity: 100;}
 #container .best .best_s .bst_list > div > a .name {margin: 15px 0; text-align: center; font-weight: 500; letter-spacing: -0.02em;}
 #container .best .best_s .bst_list > div > a .price {text-align: center; font-size: 0.88rem;}
 #container .best .swiper-button-prev {
@@ -234,22 +242,26 @@
 #container .prom .promotion .prom_slider .swiper-button-next {color: #aaa; transform: scale(.5); top: 50%; margin-top: -30px; right: 296px;}/* promotion */
 #container .prod {max-width: 1600px; margin: 0 auto;}
 #container .prod h2 {text-align: center; font-size: 2.38rem; font-weight: 800;}
-#container .prod .prod_tab {display: flex; justify-content: center; margin: 30px 0 60px 0;}
+#container .prod .prod_tab {display: flex; justify-content: center; margin: 30px 0 10px;}
 #container .prod .prod_tab li {margin-left: 30px;}
 #container .prod .prod_tab li:first-child {margin-left: 0;}
 #container .prod .prod_tab li a { color: #aaa; font-weight: 500;}
 #container .prod .prod_tab li.on a {color: #000;}
 #container .prod .prod_tab li:hover a {color: #000;}
-#container .prod .prod_up {display: flex; justify-content: space-between; margin-bottom: 50px;}
-#container .prod .prod_up > div .img_box {width: 296px; height: 296px; background-color: #efefef;}
-#container .prod .prod_up > div .img_box img {width: 100%; height: auto;}
-#container .prod .prod_up > div .name {text-align: center; margin: 15px 0; letter-spacing: -0.02em;}
-#container .prod .prod_up > div .price {text-align: center; font-size: 0.88rem;}
-#container .prod .prod_down {display: flex; justify-content: space-between; margin-bottom: 50px;}
-#container .prod .prod_down > div .img_box {width: 296px; height: 296px; background-color: #efefef;}
-#container .prod .prod_down > div .img_box img {width: 100%; height: auto;}
-#container .prod .prod_down > div .name {text-align: center; margin: 15px 0; letter-spacing: -0.02em;}
-#container .prod .prod_down > div .price {text-align: center; font-size: 0.88rem;}
+#container .prod .prod_list {display: flex; flex-flow: wrap; justify-content: space-between; margin-bottom: 50px;}
+#container .prod .prod_list > div {margin: 50px 0 0;}
+#container .prod .prod_list > div .img_box {width: 296px; height: 296px; background-color: #efefef; position: relative;}
+#container .prod .prod_list > div .img_box img {
+    width: 100%; height: auto;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .4s;
+}
+#container .prod .prod_list > div .img_box img:last-child {opacity: 0;}
+#container .prod .prod_list > div .img_box:hover img:last-child {opacity: 100;}
+#container .prod .prod_list > div .img_box:hover img:first-child {opacity: 0;}
+#container .prod .prod_list > div .name {text-align: center; margin: 15px 0; letter-spacing: -0.02em;}
+#container .prod .prod_list > div .price {text-align: center; font-size: 0.88rem;}
 #container .prod > a {
     display: block;
     width: 106px; height: 35px;
@@ -260,7 +272,7 @@
     position: relative;
     transition: all .4s;
 }
-#container .prod > a:hover {color: #fff; font-weight: 400;}
+#container .prod > a:hover {color: #fff; font-weight: 300;}
 #container .prod > a::after {
     content: '';
     display: block;
@@ -298,7 +310,15 @@
 #container .trend .tren_bg .tren_prod li {margin-left: 16px;}
 #container .trend .tren_bg .tren_prod li:first-child {margin-left: 0;}
 #container .trend .tren_bg .tren_prod li a .img_box {width: 260px; height: 260px; background-color: #efefef; position: relative; z-index: 5;}
-#container .trend .tren_bg .tren_prod li a .img_box img {width: 100%; height: auto;}
+#container .trend .tren_bg .tren_prod li a .img_box img {
+    width: 100%; height: auto;
+    position: absolute;
+    top: 0; left: 0;
+    transition: all .4s;
+}
+#container .trend .tren_bg .tren_prod li:nth-child(1) a .img_box img:last-child, #container .trend .tren_bg .tren_prod li:nth-child(2) a .img_box img:last-child {opacity: 0;}
+#container .trend .tren_bg .tren_prod li a .img_box:hover img:last-child {opacity: 100;}
+#container .trend .tren_bg .tren_prod li:nth-child(1) a .img_box:hover img:first-child, #container .trend .tren_bg .tren_prod li:nth-child(2) a .img_box:hover img:first-child {opacity: 0;}
 #container .trend .tren_bg .tren_prod li a .name {color: #f1f1f1; text-align: center; letter-spacing: -0.01em; font-weight: 300; margin: 15px 0;}
 #container .trend .tren_bg .tren_prod li a .price {color: #f1f1f1; text-align: center; font-size: 0.88rem; font-weight: 200;}
 #container .trend .tren_bg > a {
