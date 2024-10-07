@@ -12,8 +12,19 @@ header .headerin h1 a {
 header:hover .headerin h1 a {background-image: url(../img/mac_logo_b.png);}
 header .headerin .gnb {display: flex;}
 header .headerin .gnb>li {margin-left: 40px;}
-header .headerin .gnb>li:first-child {margin-left: 50px;}
-header .headerin .gnb>li>a {color: #fff; font-weight: 500; transition: all .4s; letter-spacing: -0.02em;}
+header .headerin .gnb>li:nth-child(1) {margin-left: 50px;}
+header .headerin .gnb>li:nth-child(2)::after {
+    content: '';
+    display: block;
+    width: 5px; height: 5px;
+    background-color: #ddd;
+    border-radius: 100%;
+    position: absolute;
+    top: 25px; left: 285px;
+    transition: all .4s;
+}
+header .headerin:hover .gnb>li:nth-child(2)::after {background-color: #000;}
+header .headerin .gnb>li>a {color: #fff; font-weight: 400; transition: all .4s; letter-spacing: -0.02em;}
 header:hover .headerin .gnb>li>a {color: #aaa; letter-spacing: -0.02em;}
 header .headerin .gnb>li:hover>a {color: #000;}
 header .headerin .gnb>li .sub {
