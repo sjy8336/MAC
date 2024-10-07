@@ -29,17 +29,10 @@ const promS = new Swiper('.prom_s', {
         nextEl:'.prom_slider .swiper-button-next',
     },
 });
-const promP = document.querySelector('.prom_slider .swiper-button-prev');
-const promN = document.querySelector('.prom_slider .swiper-button-next');
-const promSetin = document.querySelector('.prom_txt .setin_txt');
-const promLover = document.querySelector('.prom_txt .lover_txt');
-/* promP.addEventListener('click', function(){
-    promP = !promP
-    if(promP == false){
-        promLover.style.display='inline';
-        promSetin.style.display='none';
-    }else{
-        promLover.style.display='none';
-        promSetin.style.display='inline';
-    };
-}); */
+const prod_tab = document.querySelectorAll('.prod .prod_tab li');
+/* console.log(prod_tab); */
+$(prod_tab).on('click', function(e){
+    e.preventDefault()
+    $(prod_tab).removeClass('on');
+    $(this).addClass('on');
+})

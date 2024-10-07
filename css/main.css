@@ -237,8 +237,8 @@
 #container .prod .prod_tab {display: flex; justify-content: center; margin: 30px 0 60px 0;}
 #container .prod .prod_tab li {margin-left: 30px;}
 #container .prod .prod_tab li:first-child {margin-left: 0;}
-#container .prod .prod_tab li a { color: #aaa; font-weight: 600;}
-#container .prod .prod_tab li:first-child a {color: #000;}
+#container .prod .prod_tab li a { color: #aaa; font-weight: 500;}
+#container .prod .prod_tab li.on a {color: #000;}
 #container .prod .prod_tab li:hover a {color: #000;}
 #container .prod .prod_up {display: flex; justify-content: space-between; margin-bottom: 50px;}
 #container .prod .prod_up > div .img_box {width: 296px; height: 296px; background-color: #efefef;}
