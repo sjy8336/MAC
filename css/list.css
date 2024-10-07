@@ -71,7 +71,11 @@ background-color: #efefef; position: relative;}
     top: 15px; left: 15px;
 }
 #list .prod_list li > a .bg .best p {font-size: 0.88rem; text-align: center; line-height: 22px; color: #555;}
-#list .prod_list li > a .bg img {width: 100%; height: auto;}
+#list .prod_list li > a .bg img {
+    width: 100%; height: auto;
+    position: absolute;
+    top: 0; left: 0;
+}
 #list .prod_list li > a .key {font-size: 0.88rem; color: #aaa; text-align: center; margin: 15px 0 12px 0;}
 #list .prod_list li > a h3 {text-align: center; letter-spacing: -0.02em;}
 #list .prod_list li > a .price {font-weight: 600; letter-spacing: -0.02em; text-align: center; margin-top: 30px;}

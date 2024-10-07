@@ -16,16 +16,7 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
 #buy .buy_img .buy_slide .buy_s {display: flex; width: 100%; height: 100%; overflow: hidden;}
 #buy .buy_img .buy_slide .buy_s li a {display: block; width: 600px; height: 600px;}
 #buy .buy_img .buy_slide .buy_s li a img {width: 100%; height: auto;}
-#buy .buy_img .buy_slide .arrows button {
-    width: 25px; height: 25px;
-    position: absolute;
-    top: 50%; transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    font-size: 0;
-}
-#buy .buy_img .buy_slide .arrows .prev {left: 15px; background: url(../detail_img/btn_prev.png) no-repeat center;}
-#buy .buy_img .buy_slide .arrows .next {right: 15px; background: url(../detail_img/btn_next.png) no-repeat center;}
+#buy .buy_img .buy_slide .arrows .swiper-button-prev {}
 #buy .buy_txt {width: 695px;}
 #buy .buy_txt .prod_tit p {letter-spacing: -0.02em;}
 #buy .buy_txt .prod_tit p:nth-child(1) {font-size: 1.13rem; letter-spacing: -0.01em;}
@@ -177,14 +168,6 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
     width: 180px; height: 180px;;
     font-size: 0;
 }
-#information .review .photo_revi .photo li:nth-child(1) a {background: url(../detail_img/review_photo01.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(2) a {background: url(../detail_img/review_photo02.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(3) a {background: url(../detail_img/review_photo03.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(4) a {background: url(../detail_img/review_photo04.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(5) a {background: url(../detail_img/review_photo05.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(6) a {background: url(../detail_img/review_photo06.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(7) a {background: url(../detail_img/review_photo07.png) no-repeat center;}
-#information .review .photo_revi .photo li:nth-child(8) a {background: url(../detail_img/review_photo08.png) no-repeat center;}
 #information .review .revi_tit {
     border-top: 1px solid #efefef; border-bottom: 1px solid #efefef; 
     padding: 30px 0; 
@@ -220,7 +203,7 @@ header .headerin .util li:nth-child(3) a {background-image: url(../img/icon_shop
     background: url(../detail_img/review_photo01.png)no-repeat center / 100% auto;
     margin: 30px 10px 0 0;
 }
-#information .review .revi_txt li .user_revi .post .photo .photo_img:nth-child(2) {background-image: url(../detail_img/review_photo02.png);}
+#information .review .revi_txt li .user_revi .post .photo .photo_img:nth-child(2) {background-image: url(../detail_img/review_photo03.png);}
 #information .review .revi_txt li:nth-child(3) .user_revi .post .photo .photo_img:nth-child(1) {background-image: url(../detail_img/review_photo03.png);}
 #information .review .revi_txt li:nth-child(3) .user_revi .post .photo .photo_img:nth-child(2) {background-image: url(../detail_img/review_photo04.png);}
 #information .review .revi_txt li:nth-child(3) .user_revi .post .photo .photo_img:nth-child(3) {background-image: url(../detail_img/review_photo05.png);}
